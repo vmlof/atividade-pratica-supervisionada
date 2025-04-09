@@ -19,6 +19,10 @@ public class Fila {
         return tamanho;
     }
 
+    public No getInicio() {
+        return inicio;
+    }
+
     public void inserir(int elemento) {
         No novoNo = new No(elemento);
         if(vazia()) {
@@ -41,6 +45,10 @@ public class Fila {
         int elemento = inicio.getDado();
         inicio = inicio.getProximo();
         tamanho--;
+
+        if(inicio == null) {
+            fim = null;
+        }
         return elemento;
     }
     public void imprimir() {

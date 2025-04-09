@@ -1,6 +1,7 @@
 package mergeComFila;
 
 import fila.Fila;
+import merge.fila.MergeFila;
 
 import java.util.Scanner;
 
@@ -8,7 +9,7 @@ public class Main {
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        System.out.println("--- Merge com Fila Encadeada ---\n");
+        System.out.println("--- MergeFila com Fila Encadeada ---\n");
         System.out.println("REGRA: Insira os elementos na fila, de forma ordenada. ");
         System.out.println("Para encerrar a inserção, digite (-1).");
         System.out.println("Fila A");
@@ -146,7 +147,7 @@ public class Main {
                     break;
 
                 case 3:
-                    System.out.println("\nIniciando Merge...");
+                    System.out.println("\nIniciando MergeFila...");
                     break;
 
                 default:
@@ -155,7 +156,9 @@ public class Main {
 
         } while(opcao != 3);
 
-        // merge
+        Fila c = MergeFila.mergeFila(a,b);
+        System.out.println("\nMerge realizado: ");
+        c.imprimir();
 
     }
 }
