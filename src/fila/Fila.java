@@ -51,6 +51,18 @@ public class Fila {
         }
         return elemento;
     }
+
+    public No[] converterParaVetor() {
+        No[] v = new No[tamanho];
+        No atual = inicio;
+        int i = 0;
+        while(atual != null) {
+            v[i++] = atual;
+            atual = atual.getProximo();
+        }
+        return v;
+    }
+
     public void imprimir() {
         if(vazia()) {
             System.out.println("fila vazia");

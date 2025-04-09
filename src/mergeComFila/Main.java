@@ -157,7 +157,7 @@ public class Main {
         } while(opcao != 3);
 
         Fila c = MergeFila.mergeFila(a,b);
-        System.out.println("\nMerge realizado: ");
+        System.out.println("\nMergeVetor realizado: ");
         c.imprimir();
 
     }

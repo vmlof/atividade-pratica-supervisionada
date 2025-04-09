@@ -19,7 +19,7 @@ public class Teste {
         b.inserir(10);
 
         Fila c = MergeFila.mergeFila(a, b);
-        System.out.println("\nMerge realizado:");
+        System.out.println("\nMergeVetor realizado:");
         c.imprimir();
     }
 }
