@@ -3,14 +3,20 @@ package fila;
 public class Fila {
     private No inicio;
     private No fim;
+    private int tamanho;
 
     public Fila() {
         inicio = null;
         fim = null;
+        tamanho = 0;
     }
 
-    private boolean vazia() {
+    public boolean vazia() {
         return inicio == null && fim == null;
+    }
+
+    public int getTamanho() {
+        return tamanho;
     }
 
     public void inserir(int elemento) {
@@ -18,10 +24,12 @@ public class Fila {
         if(vazia()) {
             inicio = novoNo;
             fim = novoNo;
+            tamanho++;
         }
         else {
             fim.setProximo(novoNo);
             fim = novoNo;
+            tamanho++;
         }
     }
 
@@ -32,6 +40,7 @@ public class Fila {
         }
         int elemento = inicio.getDado();
         inicio = inicio.getProximo();
+        tamanho--;
         return elemento;
     }
     public void imprimir() {

@@ -11,7 +11,7 @@ public class MainFila {
         fila.inserir(40);
         fila.inserir(50);
         fila.imprimir();
-        System.out.println();
+        System.out.println("Tamanho: " + fila.getTamanho());
 
         fila.remover();
         fila.imprimir();
