@@ -5,7 +5,7 @@ import merge.fila.MergeFila;
 
 import java.util.Scanner;
 
-public class Main {
+public class MainFilaMerge {
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
@@ -147,7 +147,7 @@ public class Main {
                     break;
 
                 case 3:
-                    System.out.println("\nIniciando MergeFila...");
+                    System.out.println("\nIniciando merge...");
                     break;
 
                 default:
@@ -157,7 +157,7 @@ public class Main {
         } while(opcao != 3);
 
         Fila c = MergeFila.mergeFila(a,b);
-        System.out.println("\nMergeVetor realizado: ");
+        System.out.println("\nMerge realizado: ");
         c.imprimir();
 
     }
