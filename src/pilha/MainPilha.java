@@ -11,14 +11,29 @@ public class MainPilha {
         pilha.insere(4);
         pilha.insere(5);
         pilha.imprime();
+        System.out.println();
 
-        int a;
-        int b;
-        int c;
-        int d;
-        int e;
-
+        pilha.remove();
         pilha.imprime();
+        System.out.println();
+
+        pilha.remove();
+        pilha.imprime();
+        System.out.println();
+
+        pilha.remove();
+        pilha.imprime();
+        System.out.println();
+
+        pilha.remove();
+        pilha.imprime();
+        System.out.println();
+
+        pilha.remove();
+        pilha.imprime();
+        System.out.println();
+
+
 
     }
 

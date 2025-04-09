@@ -25,7 +25,6 @@ public class Pilha {
         int noTopo = topo.getDado();
         topo = topo.getProximo();
         return noTopo;
-
     }
 
     public void imprime() {
